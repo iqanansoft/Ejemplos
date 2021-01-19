@@ -1,4 +1,4 @@
-package <nombrepaquete>.numeropar_impar_divisor
+package < nombrepaquete >.numeropar_impar_divisor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -3,9 +3,9 @@ Escrito en xml y Kotlin
 
 Para PRobar el Codigo crear UN PROYECTO ANDROID Y COLOCA LOS ARCHIVOS EN sus respectivos DIRECTORIOS
 
--ACTIVITY_MAIN.XML  GUARDAR EN DIRECTORIO  --->./app/src/main/res/layout
+-ACTIVITY_MAIN.XML  GUARDAR EN DIRECTORIO  --->../app/src/main/res/layout
 
--MainActivity.KT  ..>.\app\src\main\java\ < nombrepaquete >
+-MainActivity.KT  ..> ../app/src/main/java/ < nombrepaquete >
 
 susbstituir < nombrepaquete >, por el nombre de pauqte de tu proyecto.
 

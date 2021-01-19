@@ -11,7 +11,8 @@ https://www.youtube.com/watch?v=572lvc291Hk
 
 Si queréis probar el código en un Proyecto Android, deberéis colocar los archivos en los siguientes directorios:
 
- - activity_main.xml 
+
+- activity_main.xml 
  
  .. /app/src/main/res/layout
 
@@ -19,7 +20,8 @@ Si queréis probar el código en un Proyecto Android, deberéis colocar los arch
 
 .. /app/src/main/java/ < nombrepaquete >
 
-deberéis substituir el texto < nombrepaquete >, por el nombre de paquete de vuestro proyecto.
+
+Deberéis substituir el texto < nombrepaquete >, por el nombre de paquete de vuestro proyecto.
 
 Recordad declarar el activity en el Manifest.xml
 

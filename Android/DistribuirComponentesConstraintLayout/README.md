@@ -1,7 +1,7 @@
 
 ### INFORMACIÓN
 
-Proyecto de Ejemplo escrito en XML y Kotlin.
+Proyecto de Ejemplo escrito en XML y Kotlin, donde se muestra cómo ubicar elementos gráficos dentro de un ConstraintLayout.
 
 Podéis ver una explicación sobre el código en este video:
 

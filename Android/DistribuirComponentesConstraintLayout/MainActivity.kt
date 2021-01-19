@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 
-var contenedorPrincipal: ConstraintLayout? =null
+var contenedorPrincipal: ConstraintLayout?=null
 var miNumero: EditText?=null
 var botonVerificarNumeroPar: Button?=null
 var textResultadoNumeroPar: TextView?=null

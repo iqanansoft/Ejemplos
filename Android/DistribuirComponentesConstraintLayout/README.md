@@ -1,4 +1,5 @@
 
+INFORMACI
 Escrito en xml y Kotlin
 
 Para PRobar el Codigo crear UN PROYECTO ANDROID Y COLOCA LOS ARCHIVOS EN sus respectivos DIRECTORIOS

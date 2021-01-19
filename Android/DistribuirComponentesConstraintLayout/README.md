@@ -13,11 +13,11 @@ Si queréis probar el código en un Proyecto Android, deberéis colocar los arch
 
  - activity_main.xml 
  
- ../app/src/main/res/layout
+ .. /app/src/main/res/layout
 
 - MainActivity.kt
 
-../app/src/main/java/ < nombrepaquete >
+.. /app/src/main/java/ < nombrepaquete >
 
 deberéis substituir el texto < nombrepaquete >, por el nombre de paquete de vuestro proyecto.
 

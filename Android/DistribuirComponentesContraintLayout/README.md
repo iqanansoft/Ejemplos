@@ -1,7 +1,15 @@
-CREAR UN PROYECTO ANDROID Y COLOCAR LOS ARCHIVOS EN LOS DIRECTORIOS
 
-ACTIVITY_MAIN.XML  GUARDAR EN DIRECTORIO  --->./app/src/main/res/layout
+Escrito en xml y Kotlin
 
-MainActivity.KT  ..>.\app\src\main\java\ < nombrepaquete >
+Para PRobar el Codigo crear UN PROYECTO ANDROID Y COLOCA LOS ARCHIVOS EN sus respectivos DIRECTORIOS
+
+-ACTIVITY_MAIN.XML  GUARDAR EN DIRECTORIO  --->./app/src/main/res/layout
+
+-MainActivity.KT  ..>.\app\src\main\java\ < nombrepaquete >
 
 susbstituir < nombrepaquete >, por el nombre de pauqte de tu proyecto.
+
+
+Podeis ver la explicacion del codigo en 
+
+https://www.youtube.com/watch?v=572lvc291Hk

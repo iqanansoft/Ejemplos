@@ -9,6 +9,8 @@ Para PRobar el Codigo crear UN PROYECTO ANDROID Y COLOCA LOS ARCHIVOS EN sus res
 
 susbstituir < nombrepaquete >, por el nombre de pauqte de tu proyecto.
 
+recuerda declarar el activity en el Manifest.xml
+
 
 Podeis ver la explicacion del codigo en 
 

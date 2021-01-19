@@ -1,4 +1,4 @@
-package iqanansoft.examples.numeropar_impar_divisor
+package <nombrepaquete>.numeropar_impar_divisor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         //crear objecto ConstraintSet
         unionesComponentesConstraint.clone(contenedorPrincipal)
         unionesComponentesConstraint.connect(textResultadoNumeroPar!!.id,ConstraintSet.LEFT, botonVerificarNumeroPar!!.id,ConstraintSet.RIGHT,12)// margen expresado en px
-        // unionesComponentesConstraint.connect(textResultadoNumeroPar!!.id,ConstraintSet.START, botonVerificarNumeroPar!!.id,ConstraintSet.END)
+        //unionesComponentesConstraint.connect(textResultadoNumeroPar!!.id,ConstraintSet.START, botonVerificarNumeroPar!!.id,ConstraintSet.END)
         //unionesComponentesConstraint.connect(textResultadoNumeroPar!!.id,ConstraintSet.TOP, ConstraintSet.PARENT_ID,ConstraintSet.TOP)
         unionesComponentesConstraint.constrainPercentWidth(botonVerificarNumeroPar!!.id,0.4f)// su ancho sera el 40 % del ancho del contenedor padre
         unionesComponentesConstraint.applyTo(contenedorPrincipal)

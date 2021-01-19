@@ -1,7 +1,7 @@
 
 ### INFORMACIÓN
 
-Proyecto de Ejemplo escrito con XML y Kotlin.
+Proyecto de Ejemplo escrito en XML y Kotlin.
 
 Podéis ver una explicación sobre el código en este video:
 

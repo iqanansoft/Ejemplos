@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity"  android:id="@+id/contenedorPrincipal">
+
+        <TextView android:id="@+id/textDimeNumero"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Dime un Número sin Decimales: " android:textSize="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/contenedorEditTextNumeroComprobaciones" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/contenedorEditTextNumeroComprobaciones"
+            android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textDimeNumero"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lineaSeparadora1">
+
+
+                   <!-- Aqui el textview y editext se distribuyen por igual automaticamente,
+                   ocupando cada uno el 40% del ancho del contenedor donde estan situados-->
+                    <TextView android:id="@+id/textMiNumero"
+                       android:layout_width="0dp" android:layout_height="0dp"
+                       android:gravity="left|center_vertical" android:background="#D8D7D7"
+                       android:text="Número:" android:textSize="24dp"
+                       android:padding="10dp"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toLeftOf="@+id/editTextNumeroComprobaciones"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintWidth_percent="0.4" />
+
+
+                    <EditText android:id="@+id/editTextNumeroComprobaciones"
+                        android:layout_width="0dp" android:layout_height="0dp"
+                        android:background="#000000"
+                        android:gravity="center_vertical|right" android:padding="10dp"
+                        android:inputType="number|numberSigned"
+                        android:hint="0" android:textColorHint="#FFFFFF"
+                        android:textSize="22dp" android:textColor="#FFFFFF" android:maxLength="8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/textMiNumero"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+
+                    <!-- Estos dos componentes Comentados son los mismo que los anteriores,
+                        tambien ocupan el 40% del ancho de la pantalla, pero el edittext
+                        al tener la propiedad app:layout_constraintStart_toEndOf="@+id/textMiNumero" ya no se distribuye por igual por
+                        toda la pantalla, ya que le he indicado que el lado donde empieza el Editext debe colocarse
+                        justo en el punto donde acaba el TextView
+
+                     <TextView android:id="@+id/textMiNumero"
+                        android:layout_width="0dp" android:layout_height="0dp"
+                        android:gravity="left|center_vertical" android:background="#D8D7D7"
+                        android:text="Número:" android:textSize="24dp"
+                        android:padding="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/editTextNumeroComprobaciones"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintWidth_percent="0.4"/>
+
+
+                     <EditText android:id="@+id/editTextNumeroComprobaciones"
+                        android:layout_width="0dp" android:layout_height="0dp"
+                        android:background="#000000"
+                        android:gravity="center_vertical|right" android:padding="10dp"
+                        android:inputType="number|numberSigned"
+                        android:hint="0" android:textColorHint="#FFFFFF"
+                        android:textSize="22dp" android:textColor="#FFFFFF" android:maxLength="8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textMiNumero"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintWidth_percent="0.4"/>
+
+                      -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout  android:id="@+id/lineaSeparadora1"
+            android:layout_width="0dp" android:layout_height="2dp"
+            android:background="#000000" android:orientation="horizontal"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/contenedorEditTextNumeroComprobaciones"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textNumeroParComprobacion"
+            app:layout_constraintWidth_percent="1.0"/>
+
+
+        <TextView android:id="@+id/textNumeroParComprobacion"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="¿Mi Número será Par o Impar?" android:textSize="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/lineaSeparadora1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/botonNumeroParComprobacion" />
+
+
+        <Button android:id="@+id/botonNumeroParComprobacion"
+            android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:text="¡¡COMPROBAR!!" android:textSize="22dp"
+            app:layout_constraintTop_toBottomOf="@+id/textNumeroParComprobacion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textResultadoNumeroParComprobacion"
+            app:layout_constraintWidth_percent="0.6"/>
+
+
+        <TextView android:id="@+id/textResultadoNumeroParComprobacion"
+            android:layout_width="0dp" android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:text="Aún no se ha comprobado ningún número." android:textSize="20dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/botonNumeroParComprobacion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lineaSeparadora2" />
+
+
+        <LinearLayout  android:id="@+id/lineaSeparadora2"
+            android:layout_width="0dp" android:layout_height="2dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:background="#000000" android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textResultadoNumeroParComprobacion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textNumeroDivisorComprobacion" />
+
+
+        <TextView android:id="@+id/textNumeroDivisorComprobacion"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="¿Mi Número tendrá este Número como Divisor...?" android:textSize="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/lineaSeparadora2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumeroDivisorComprobacion" />
+
+
+        <EditText android:id="@+id/editTextNumeroDivisorComprobacion"
+            android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:background="#000000"
+            android:gravity="center_vertical|right" android:padding="10dp"
+            android:inputType="number|numberSigned"
+            android:hint="Escribe aqui el Número Divisor" android:textColorHint="#FFFFFF"
+            android:textSize="22dp" android:textColor="#000000"  android:maxLength="10"
+            app:layout_constraintTop_toBottomOf="@+id/textNumeroDivisorComprobacion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/botonNumeroDivisorComprobacion" />
+
+
+        <Button android:id="@+id/botonNumeroDivisorComprobacion"
+            android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:text="¡¡VERIFICAR!!" android:textSize="22dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumeroDivisorComprobacion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textResultadoNumeroDivisorComprobacion"
+            app:layout_constraintWidth_percent="0.6" />
+
+
+        <TextView android:id="@+id/textResultadoNumeroDivisorComprobacion"
+            android:layout_width="0dp" android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp" android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:text="Aún no se ha comprobado ningún número."  android:textColor="#000000" android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/botonNumeroDivisorComprobacion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"  />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

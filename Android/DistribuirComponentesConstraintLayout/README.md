@@ -15,7 +15,7 @@ Si queréis probar el código en un Proyecto Android, deberéis colocar los arch
  
  ../app/src/main/res/layout
 
-- MainActivity.ktT 
+- MainActivity.kt
 
 ../app/src/main/java/ < nombrepaquete >
 

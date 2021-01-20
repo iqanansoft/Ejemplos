@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         botonVerificarNumeroDivisor=findViewById(R.id.botonNumeroDivisorComprobacion)
         textResultadoNumeroDivisor=findViewById(R.id.textResultadoNumeroDivisorComprobacion)
 
-
+        /*
         var unionesComponentesConstraint = ConstraintSet()
         //crear objecto ConstraintSet
         unionesComponentesConstraint.clone(contenedorPrincipal)
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         //unionesComponentesConstraint.connect(textResultadoNumeroPar!!.id,ConstraintSet.TOP, ConstraintSet.PARENT_ID,ConstraintSet.TOP)
         unionesComponentesConstraint.constrainPercentWidth(botonVerificarNumeroPar!!.id,0.4f)// su ancho sera el 40 % del ancho del contenedor padre
         unionesComponentesConstraint.applyTo(contenedorPrincipal)
-
+        */
     }
 
 }

@@ -7,3 +7,7 @@ El objetivo del proyecto es disponer de una herramienta sencilla donde poder esc
 El proyecto está desarrollado con HTML, JavaScript y CSS, por lo que puede utilizarse directamente desde un navegador sin necesidad de instalar software adicional.
 
 Solo es necesario abrir el archivo HTML principal para comenzar a utilizar el editor.
+
+Podeis descargar en formato zip el editor aqui
+
+https://github.com/iqanansoft/Proyectos/releases/tag/markdown-editor-v1.0
